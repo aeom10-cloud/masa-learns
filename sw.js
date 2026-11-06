@@ -1,6 +1,6 @@
-// MASA Learns offline support. Version: 20261106-162255
+// MASA Learns offline support. Version: 20261106-163634
 // Always tries the internet first (so updates arrive), falls back to the saved copy offline.
-const CACHE = 'masa-20261106-162255';
+const CACHE = 'masa-20261106-163634';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png', './favicon.svg'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {
